@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'sagas',
     'character',
-    'type_character',
     'fusion',
     'type_fusion'
 )
