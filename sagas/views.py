@@ -8,8 +8,5 @@ import json
 def index(request):
 
     data = {'foo': 'bar', 'hello': 'world'}
-
     return HttpResponse(json.dumps(data), content_type='application/json')
 
-
-def sagas(request):

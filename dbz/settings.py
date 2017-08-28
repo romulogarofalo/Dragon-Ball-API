@@ -38,8 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'sagas',
     'character',
-    'fusion',
-    'type_fusion'
+    'fusion'
 )
 
 MIDDLEWARE_CLASSES = (
