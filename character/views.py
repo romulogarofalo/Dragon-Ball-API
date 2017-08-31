@@ -7,9 +7,10 @@ import json
 def get_all_types(request):
     alltypes = type_character.objects.all()
     races = []
-    race = {}
     for tipo in alltypes:
+        race = {}
         race["id"] = tipo.id
         race["race"] = tipo.nm_type_character
         races.append(race)
+        
     return HttpResponse(json.dumps(races), content_type='application/json')
