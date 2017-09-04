@@ -41,13 +41,4 @@ def get_saga(request, id_saga):
     sag["img_saga"] = historia.img_saga
     
     return HttpResponse(json.dumps(sag), content_type='application/json')
-
-'''
-@csrf_exempt
-def inserir_saga(request):
-    post = QueryDict(request.body)
-    #def save_events_json(request):
-    new_saga = saga(nm_saga=str(request.post.get('nm_saga')),ds_saga=str(post.get('ds_saga')),img_saga=str(post.get('img_saga')))
-    #new_saga.save()
-    return HttpResponse(str(request.post.get('nm_saga')))
-'''
+    

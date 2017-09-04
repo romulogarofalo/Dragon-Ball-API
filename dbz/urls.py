@@ -7,6 +7,7 @@ urlpatterns = patterns('',
     url(r'^type_character/$','character.views.get_all_types'),
     url(r'^type_character/(?P<type_character_id>\d+)/','character.views.get_type'),
     url(r'^characters/$','character.views.get_characters'),
+    url(r'^characters/(?P<name_or_id>\d+)/','character.views.get_character'),
     url(r'^sagas/$','sagas.views.get_all_sagas'),
-    url(r'^sagas/inserir$','sagas.views.inserir_saga')
+    url(r'^sagas/(?P<id_saga>\d+)/','sagas.views.get_saga')
 )
