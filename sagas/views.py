@@ -39,6 +39,4 @@ def get_saga(request, id_saga):
     sag["characters"] = allcharacter
     sag["ds_saga"] = historia.ds_saga
     sag["img_saga"] = historia.img_saga
-    
     return HttpResponse(json.dumps(sag), content_type='application/json')
-    
