@@ -7,7 +7,7 @@ class type_character(models.Model):
 class character(models.Model):
     nm_character = models.CharField(max_length=100, null=False)
     img_character = models.CharField(max_length=500, null=False)
-    fighting_power = models.IntegerField()
+    fighting_power = models.CharField(max_length=100, null=False)
     type_id = models.ForeignKey(type_character, related_name='type_character')
     saga_id = models.ForeignKey(saga, related_name="saga")
     
