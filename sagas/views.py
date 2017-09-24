@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from sagas.models import saga
-from characters.models import characters
+from character.models import character
 import json
 
 # Create your views here.
@@ -26,7 +26,7 @@ def get_all_sagas(request):
 
 def get_saga(request, id_saga):
     historia = saga.objects.get(id=int(id_saga))
-    personagens = characters.objects.get(saga_id=int(id_saga))
+    personagens = character.objects.get(saga_id=int(id_saga))
     sag = {}
     allcharacter = []
     for carinhas in personagens:
