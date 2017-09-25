@@ -4,8 +4,9 @@
     <tr>
         <td>
         <sub>
-       	 	<h4>This is a project is about one of my favorite animes Dragon Ball and one of my favorite languages <a href="https://www.python.org/">(Python)</a> with the framework <a href="https://www.djangoproject.com/">(Django)</a>. the project is a API REST to get informations about the anime
-       	 	</h4>
+       	 	<h2>This is a project is about one of my favorite animes Dragon Ball and one of my favorite languages <a href="https://www.python.org/">(Python)</a> with the framework <a href="https://www.djangoproject.com/">(Django)</a>. 
+			<br>The project is a API REST to get informations about the anime
+       	 	</h2>
         </sub>
         </td>
     </tr>
