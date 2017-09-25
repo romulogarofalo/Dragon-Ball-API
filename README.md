@@ -66,7 +66,7 @@
 #### Create the database with the schema
 	python manage.py migrate
 ---------------------------------------------------------------------------
-#### Start on the server
+#### Start the server
 	python manage.py runserver
 ---------------------------------------------------------------------------
 #### Finaly use the route seeds and its ready to use
