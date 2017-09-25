@@ -49,3 +49,28 @@
 		"ds_saga": "a continua\u00e7\u00e3o de Dragon Ball Z e agora com Lorde Bils a procura do deus super sayajin"
 	}]
 
+## Instructions to install
+### if you use Linux
+#### Frist you going need pip 
+	sudo apt-get install python-pip
+---------------------------------------------------------------------------
+#### Now you can install the framework Django
+	sudo pip install django==1.7.4
+---------------------------------------------------------------------------
+#### Clone the project
+	git clone https://github.com/Bolinhozz/dbz_api.git
+---------------------------------------------------------------------------
+#### Generating the database schema
+	python manage.py makemigrations
+---------------------------------------------------------------------------
+#### Create the database with the schema
+	python manage.py migrate
+---------------------------------------------------------------------------
+#### Start on the server
+	python manage.py runserver
+---------------------------------------------------------------------------
+#### Finaly use the route seeds and its ready to use
+	localhost:8000/seeds
+---------------------------------------------------------------------------
+### If you use Windows
+	install Ubuntu
