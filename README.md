@@ -1,12 +1,11 @@
-# dbz_api
-
-![logo_prj]()
+![logo_prj](https://github.com/Bolinhozz/dbz_api/blob/master/dbz_api.png)
 
 <table>
     <tr>
         <td>
         <sub>
-       	This is a project is about one of my favorite animes Dragon Ball and one of my favorite languages <a href="https://www.python.org/">(Python)</a> with the framework <a href="https://www.djangoproject.com/">(Django)</a>. the project is a API REST to get informations about the anime
+       	 	<h4>This is a project is about one of my favorite animes Dragon Ball and one of my favorite languages <a href="https://www.python.org/">(Python)</a> with the framework <a href="https://www.djangoproject.com/">(Django)</a>. the project is a API REST to get informations about the anime
+       	 	</h4>
         </sub>
         </td>
     </tr>
@@ -25,7 +24,7 @@
 | /seeds                                        | seed all the informations about the anime      | GET(shoud be a POST)|
 
 
-##Saga
+## SAGA
 #### /saga
 	[{
 		"nm_saga": "Dragon Ball",
