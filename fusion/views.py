@@ -12,9 +12,9 @@ def get_all_fusions(request):
         fug = {}
         fug["id"] = fusao.id
         fug["nm_character_fusion"] = fusao.nm_character_fusion
-        fug["character1_id"] = fusao.character1_id
-        fug["character2_id"] = fusao.character2_id
-        fug["nm_type_fusion"] = type_fusion.objects.get(id=int(fusao.type_fusion_id)).nm_type_fusion
+        fug["character1_id"] = fusao.character1_id.id
+        fug["character2_id"] = fusao.character2_id.id
+        fug["nm_type_fusion"] = fusao.type_fusion_id.nm_type_fusion
         fusoes.append(fug)
     return HttpResponse(json.dumps(fusoes), content_type='application/json')
     
@@ -24,9 +24,9 @@ def get_fusion(request,name_or_id):
         all_fusions = fusion.objects.get(id=int(name_or_id))
         result["id"] = all_fusions.id
         result["nm_character_fusion"] = all_fusions.nm_character_fusion
-        result["character1_id"] = all_fusions.character1_id
-        result["character2_id"] = all_fusions.character2_id
-        result["nm_type_fusion"] = type_fusion.objects.get(id=int(all_fusions.type_fusion_id)).nm_type_fusion
+        result["character1_id"] = all_fusions.character1_id.id
+        result["character2_id"] = all_fusions.character2_id.id
+        result["nm_type_fusion"] = all_fusions.type_fusion_id.nm_type_fusion
     else:
         alllike = []
         allfusions = fusion.objects.filter(string__contains=name_or_id)
@@ -36,7 +36,7 @@ def get_fusion(request,name_or_id):
             fus["nm_character_fusion"] = fusao.nm_character_fusion
             fus["character1_id"] = fusion.character1_id
             fus["character2_id"] = fusion.character2_id
-            fus["nm_type_fusion"] = type_fusion.objects.get(id=int(fusao.type_fusion_id)).nm_type_fusion
+            fus["nm_type_fusion"] = fusion.type_fusion_id.nm_type_fusion
             alllike.append(fus)
         result["fusions"] = alllike
     return HttpResponse(json.dumps(result), content_type='application/json')
